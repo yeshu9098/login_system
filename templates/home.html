@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<header>
+
+  <nav id="sidebarMenu" class="collapse d-lg-block sidebar bg-white">
+    <div class="position-sticky">
+      <div class="list-group list-group-flush mx-3 mt-4">
+        <a href="" class="list-group-item list-group-item-action py-2" aria-current="true">
+          <i class="bi bi-house me-3"></i>
+          <span>Home</span>
+        </a>
+        <a href="" class="list-group-item list-group-item-action py-2" aria-current="true">
+          <i class="bi bi-journal me-3"></i>
+          <span>Orders</span>
+        </a>
+        <a href="" class="list-group-item list-group-item-action py-2" aria-current="true">
+          <i class="bi bi-bag me-3"></i>
+          <span>Products</span>
+        </a>
+        <a href="" class="list-group-item list-group-item-action py-2" aria-current="true">
+          <i class="bi bi-person me-3"></i>
+          <span>Customers</span>
+        </a>
+        <a href="" class="list-group-item list-group-item-action py-2" aria-current="true">
+          <i class="bi bi-graph-up me-3"></i>
+          <span>Reports</span>
+        </a>
+        <a href="" class="list-group-item list-group-item-action py-2" aria-current="true">
+          <i class="bi bi-layers me-3"></i>
+          <span>Integrations</span>
+        </a>
+
+      </div>
+    </div>
+  </nav>
+  <!-- Sidebar -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="">
+        Dashboard
+      </a>
+      <!-- Search form -->
+      <form class="d-none d-md-flex input-group w-auto my-auto align-items-end">
+        <input class="form-control border rounded" style="min-width: 225px" placeholder='Search (ctrl + "/" to focus)'
+          type="search">
+        <span class="input-group-append ps-2">
+          <button class="btn bg-white border rounded" type="button">
+            Search
+          </button>
+        </span>
+      </form>
+
+
+      <div class="ms-auto">
+        <!-- Avatar -->
+        <div class="nav-item dropdown">
+          <a class="nav-link hidden-arrow d-flex align-items-center dropdown-toggle" href="" id="navbarDropdownMenuLink"
+            type="" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg" class="rounded-circle" height="28" alt=""
+              loading="lazy" />
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="{% url 'app:update' %}">Update User</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="{% url 'password_change' %}">Change Password</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="{% url 'app:logout' %}">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- Toggle button -->
+      <a class="navbar-toggler" style="color: black;" type="button" data-bs-toggle="collapse"
+        data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg></i>
+      </a>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main>
+  <div class="container-fluid ms-sm-auto">
+    <div class="row">
+      <div class="col-md-9 col-lg-9">
+
+        <div class="row">
+          <div class="col-sm-6 pt-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional
+                  content.</p>
+                <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 pt-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional
+                  content.</p>
+                <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 pt-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional
+                  content.</p>
+                <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 pt-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional
+                  content.</p>
+                <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-3 col-lg-3 pt-4 pb-5">
+
+        <div class="card">
+          <div class="card-header">
+            Quote
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>A well-known quote, contained in a blockquote element.</p>
+              <footer class="blockquote-footer">Someone famous in
+                <cite title="Source Title">Source</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}
